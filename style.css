@@ -1,1 +1,64 @@
 @import url(reset.css);
+
+div {
+  outline: 2px solid #042A2B;
+  color: #042A2B;
+}
+.container {
+  width: 1200px;
+  margin: 50px auto;
+}
+.first {
+  background-color: #EF7B45;
+  font-size: 0;
+}
+.first > div {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 32px;
+}
+.second {
+  background-color: #CDEDF6;
+  font-size: 0;
+}
+.second > div {
+  width: 800px;
+  display: inline-block;
+  font-size: 32px;
+}
+.second > div > div {
+  height: 200px;
+}
+.second > div + div {
+  width: 400px;
+}
+.second > div + div > div {
+  height: 133.3px;
+}
+.third {
+  background-color: #5EB1BF;
+  font-size: 0;
+}
+.third > div {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: 32px;
+}
+.third > div + div {
+  width: 800px;
+}
+.third > div + div > div {
+  height: 200px;
+  font-size: 0;
+}
+.third > div + div > div + div > div {
+  display: inline-block;
+  font-size: 32px;
+  width: 400px;
+  height: 200px;
+}
+.third > div + div > div + div > div + div > div {
+  height: 100px;
+}
