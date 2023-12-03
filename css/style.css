@@ -1,12 +1,31 @@
 @import url(reset.css);
-
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
 div {
   outline: 2px solid #042A2B;
+}
+a {
   color: #042A2B;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #042A2B;
+}
+a > p {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px;
 }
 .container {
   width: 1200px;
   margin: 50px auto;
+}
+.container.container-outline {
+  outline: none;
 }
 .first {
   background-color: #EF7B45;
@@ -61,4 +80,60 @@ div {
 }
 .third > div + div > div + div > div + div > div {
   height: 100px;
+}
+
+/* float */
+
+.container.float-container div {
+  outline: 2px solid #0A122A;
+}
+.first-float {
+  background-color: #804E49;
+}
+.first-float > div {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+.second-float {
+  background-color: #E7DECD;
+}
+.second-float > div {
+  float: left;
+  width: 800px;
+}
+.second-float > div + div {
+  width: 400px;
+}
+.second-float > div > div {
+  height: 200px;
+}
+.second-float > div + div > div  {
+  height: 133.3px;
+}
+.third-float {
+  background-color: #698F3F;
+}
+.third-float > div {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+.third-float > div + div {
+  width: 800px;
+}
+.third-float > div + div > div {
+  height: 200px;
+}
+.third-float > div + div > div + div > div {
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.third-float .clearfix > div + div > div {
+  height: 100px;
+}
+.link-float {
+  color: #0A122A;
+  text-decoration-color: #0A122A;
 }
