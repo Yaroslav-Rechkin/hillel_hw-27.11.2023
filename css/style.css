@@ -145,3 +145,53 @@ a > p {
 }
 
 /* flex */
+
+.flex-container {
+  outline: 2px solid #153243;
+}
+.first-flex-item {
+  display: flex;
+  background: #284B63;
+}
+.first-flex-item > div {
+  height: 400px;
+  width: 400px;
+}
+.second-flex-item {
+  display: flex;
+  background: #B4B8AB;
+}
+.second-flex-item > div > div {
+  height: 200px;
+  width: 800px;
+}
+.second-flex-item > div + div > div {
+  height: 133.3px;
+  width: 400px;
+}
+.third-flex-item {
+  background: #F4F9E9;
+  display: flex;
+}
+.third-flex-item > div {
+  width: 400px;
+  height: 400px;
+}
+.third-flex-item > div + div {
+  width: 800px;
+}
+.third-flex-item > div + div > div {
+  height: 200px;
+}
+.third-flex-item-div {
+  display: flex;
+}
+.third-flex-item-div > div {
+  width: 400px;
+}
+.third-flex-item-div > div + div > div {
+  height: 100px;
+}
+.link-flex {
+  color: #153243;
+}
