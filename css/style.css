@@ -1,4 +1,7 @@
 @import url(reset.css);
+
+/* global */
+
 .clearfix::after {
   content: '';
   clear: both;
@@ -27,6 +30,9 @@ a > p {
 .container.container-outline {
   outline: none;
 }
+
+/* inline-block */
+
 .first {
   background-color: #EF7B45;
   font-size: 0;
@@ -137,3 +143,5 @@ a > p {
   color: #0A122A;
   text-decoration-color: #0A122A;
 }
+
+/* flex */
