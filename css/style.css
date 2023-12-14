@@ -161,13 +161,17 @@ a > p {
   display: flex;
   background: #B4B8AB;
 }
+.second-flex-item > div {
+  width: 800px;
+}
 .second-flex-item > div > div {
   height: 200px;
-  width: 800px;
+}
+.second-flex-item > div + div {
+  width: 400px;
 }
 .second-flex-item > div + div > div {
   height: 133.3px;
-  width: 400px;
 }
 .third-flex-item {
   background: #F4F9E9;
